@@ -28,3 +28,11 @@ end
 def move(board, position_selection, current_player)
  board[position_selection] = current_player
 end
+
+def position_taken?(board, index)
+  if board[index] != ("X") && board[index] != ("O")
+    return false
+  elsif board[index] == ("X") || board[index] == ("O")
+    return true
+  end
+end
