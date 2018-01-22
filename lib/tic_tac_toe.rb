@@ -11,7 +11,7 @@ WIN_COMBINATIONS = [
   [0,4,8]
 ]
 
-board = [" "," "," "," "," "," "," "," ","X"]
+board = ["X"," "," "," "," "," "," "," "," "]
 
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
