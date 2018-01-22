@@ -45,6 +45,8 @@ def valid_move?(board, index)
   end
 end
 
+board[index] = current_player
+
 def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
