@@ -4,7 +4,8 @@ require_relative '../lib/tic_tac_toe'
 
 puts "Welcome to Tic Tac Toe!"
 
-display_board(board)
+board = (position_selection, current_player = ["X" , " " , " " , " " , " " , " " , " " , " " , " "])
+puts board
 
 puts "Where would you like to go?"
 
