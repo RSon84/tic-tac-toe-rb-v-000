@@ -25,8 +25,8 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
-def move(board, input_to_index(user_input), current_player)
- board[input_to_index(user_input)] = current_player
+def move(board, index, current_player)
+ board[index] = current_player
 end
 
 def position_taken?(board, index)
@@ -50,7 +50,7 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board, index)
-    move(board, position_selection, current_player)
+    move(board, index, current_player)
   else
     turn(board)
   end
